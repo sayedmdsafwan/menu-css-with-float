@@ -1,29 +1,27 @@
-* {
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
 }
-#menu {
-    background: rgb(57, 73, 100);
-}
+
 #menu > ul {
-    background: rgb(57, 73, 100);
+    background: rgb(35, 104, 199);
+    margin: 0;
+    padding: 0;
 }
+
 #menu ul {
     list-style: none;
     position: relative;
     float: left;
 }
-#menu ul:after {
-    content: "";
-    display: block;
-    clear: both;
-}
+
 #menu ul li {
     float: left;
     position: relative;
 }
+
 #menu ul li a {
     text-decoration: none;
     color: #fff;
@@ -31,31 +29,20 @@
     padding: 10px 20px;
 }
 
-#menu ul li:hover {
-    background: rgb(26, 173, 151);
-}
-
 #menu ul ul {
     position: absolute;
-    background: rgb(12, 134, 116);
-    top: 100%;
-    left: 0%;
+    background: rgb(27, 102, 145);
     display: none;
 }
 
 #menu ul ul li {
     float: none;
     width: 200px;
-    border-left: 4px solid rgba(57, 73, 100, 0);
-}
-
-#menu ul ul li:hover {
-    border-left: 4px solid rgb(57, 73, 100);
 }
 
 #menu ul ul ul {
     left: 100%;
-    top: -4px;
+    top: 0%;
 }
 
 #menu ul li:hover > ul {
